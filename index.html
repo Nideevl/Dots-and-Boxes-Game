@@ -808,7 +808,7 @@
         localStorage.setItem('gridSize', sizeOptions.value);
     });
 
-    const savedGridSize = localStorage.getItem('gridSize');
+    const savedGridSize = localStorage.getItem('gridSize') || 4;
     if (savedGridSize) {
         sizeOptions.value = savedGridSize;
     }
